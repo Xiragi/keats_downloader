@@ -24,6 +24,8 @@ class Database():
     def createNewDatabase(self):
         try:
             os.remove("main.db")
+        except:
+            print("Could not delete database (not exist or in use)")
         self.database = sqlite3.connect("main.db")
         self.database.execute(self.newDatabaseStatement)
         self.database.commit()
