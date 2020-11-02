@@ -37,13 +37,11 @@ pip3 install -r requirements.txt
 ```
 
 ## Basic usage
-1. Create a `courses.txt` file with the urls to all courses you want to download separated by newlines. Its contents should look something like this:
+1. Edit  `courses.txt` file with the urls to all the courses modules you want to download separated by a new line. It's contents should look something like this:
 ```
 https://keats.kcl.ac.uk/course/view.php?id=AAAAA
 https://keats.kcl.ac.uk/course/view.php?id=BBBBB
 https://keats.kcl.ac.uk/course/view.php?id=CCCCC
 https://keats.kcl.ac.uk/course/view.php?id=DDDDD
 ```
-2. Execute the python files in their numbered order. The 0-numbered files should be executed only once, others will have to be reapeated if you want to download new videos. `0_login.py` gives you an opportunity to login to your keats account because the browser uses a separate profile.
-
-You still need to have logged in to your account to use this.
+2. Execute run.py and it should walk you through the steps. You should leave this running overnight as it can take a long time. (Looking to see if I can remux the video stream so it would be faster)
