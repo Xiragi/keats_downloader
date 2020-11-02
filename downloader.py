@@ -22,7 +22,8 @@ class Database():
         return self.database
     
     def createNewDatabase(self):
-        os.remove("main.db")
+        try:
+            os.remove("main.db")
         self.database = sqlite3.connect("main.db")
         self.database.execute(self.newDatabaseStatement)
         self.database.commit()
