@@ -44,4 +44,4 @@ https://keats.kcl.ac.uk/course/view.php?id=BBBBB
 https://keats.kcl.ac.uk/course/view.php?id=CCCCC
 https://keats.kcl.ac.uk/course/view.php?id=DDDDD
 ```
-2. Execute run.py and it should walk you through the steps. 
+2. Execute main.py and it should walk you through the steps. 
