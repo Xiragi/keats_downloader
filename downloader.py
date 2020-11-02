@@ -121,7 +121,7 @@ class VideoSaver():
                 r = requests.get(video[5])
                 open(path, "wb").write(r.content)
             else:
-                ffmpeg.input(video[5]).output(path).run()
+                ffmpeg.input(video[5]).output(path,codec="copy").run()
                 print("Finished downloading: ",video[1],video[2],video[3])
             if (video[6] is not None):
                 r = requests.get(video[6])
