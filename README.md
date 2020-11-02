@@ -44,4 +44,4 @@ https://keats.kcl.ac.uk/course/view.php?id=BBBBB
 https://keats.kcl.ac.uk/course/view.php?id=CCCCC
 https://keats.kcl.ac.uk/course/view.php?id=DDDDD
 ```
-2. Execute run.py and it should walk you through the steps. You should leave this running overnight as it can take a long time. (Looking to see if I can remux the video stream so it would be faster)
+2. Execute run.py and it should walk you through the steps. 
