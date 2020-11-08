@@ -8,11 +8,11 @@ This is a project intended to automatically download all videos in a course and 
 - Being able to playback videos at non-turtle speed (more than 2x)
 - Being able to use subtitles as a semi-accurate transcript
 - Being able to watch high-resolution video streams with no buffering
+- Offline download
 
 ## Todo
 
 - Convert variable names from camel case to snake case
-- Embed subtitle files in video via ffmpeg
 - Add an auto install script
 - Improve setup experience
 
