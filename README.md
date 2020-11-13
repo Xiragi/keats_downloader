@@ -21,7 +21,9 @@ This is a project intended to automatically download all videos in a course and 
 ```
 pip3 install -r requirements.txt
 ```
-2. Download the chrome selenium driver [here](https://sites.google.com/a/chromium.org/chromedriver/downloads). Extract and place it in the main directory such that the directory looks like this
+2. Download the chrome selenium driver [here](https://sites.google.com/a/chromium.org/chromedriver/downloads). Extract and place it in the main directory such that the directory looks like this. 
+
+### **Make sure the selenium driver you get is the same version as the chrome browser you are using!!**
 
 ```
 ./selenium/chromedriver.exe
