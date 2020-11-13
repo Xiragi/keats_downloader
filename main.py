@@ -17,10 +17,10 @@ else:
 print("Have you logged in before? (Y/N)")
 response = input("")
 Browser = downloader.Selenium()
-if response == "N":   
+if response == "N":
+    print("Once you are logged in close the browser and wait")
     Browser.loadKeatsPage(False)
-    input("Press Enter once you are logged in")
-
+    
 print("Setup stage complete")
 #Video Setup
 
