@@ -43,6 +43,7 @@ class Selenium():
             options.add_argument("disable-web-security")
         driver = webdriver.Chrome(executable_path=self.webDriverPath, chrome_options=options)
         driver.get("https://keats.kcl.ac.uk/")
+        input("Press Enter once you are logged in\n")
         driver.quit()
     def getVideoList(self,database,courses):
         options = webdriver.ChromeOptions()
