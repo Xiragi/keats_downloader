@@ -1,7 +1,6 @@
-
 > :warning: This project is very WIP, I provide no warranty. Depending on how your lecturer uses KEATS, the link to the video page or the video itself might not be recognised.
 
-> This project is also a fork of the original repository so our programs may not work together in the future
+> This project is also a fork of the original repository so our programs may not work together in the future.
 
 # Keats Downloader
 This is a project intended to automatically download all videos in a course and store them locally. Benefits include:
@@ -13,13 +12,13 @@ This is a project intended to automatically download all videos in a course and 
 ## Todo
 
 - Convert variable names from camel case to snake case
-- Add an auto install script
+- Add an auto-install script
 - Improve setup experience
 - Headless mode
 - Use of other drivers
 - Linux and Mac OSX support
 - srt download option
-- Auto add ffmpeg to path 
+- Auto-add ffmpeg to path 
 
 ## Requirements
 1. To install the python modules used by the project run the following in the directory.
@@ -44,7 +43,7 @@ pip3 install -r requirements.txt
 ```
 
 ## Basic usage
-1. Edit  `courses.txt` file with the urls to all the courses modules you want to download separated by a new line. It's contents should look something like this:
+1. Edit  `courses.txt` file with the URLs to all the courses modules you want to download separated by a new line. Its contents should look something like this:
 ```
 https://keats.kcl.ac.uk/course/view.php?id=AAAAA
 https://keats.kcl.ac.uk/course/view.php?id=BBBBB
