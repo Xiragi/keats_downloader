@@ -15,6 +15,11 @@ This is a project intended to automatically download all videos in a course and 
 - Convert variable names from camel case to snake case
 - Add an auto install script
 - Improve setup experience
+- Headless mode
+- Use of other drivers
+- Linux and Mac OSX support
+- srt download option
+- Auto add ffmpeg to path 
 
 ## Requirements
 1. To install the python modules used by the project run the following in the directory.
