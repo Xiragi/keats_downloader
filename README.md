@@ -19,6 +19,8 @@ This is a project intended to automatically download all videos in a course and 
 - Linux and Mac OSX support
 - srt download option
 - Auto-add ffmpeg to path 
+- Add padding so files are in order and avoid overwriting of videos of the same file name.
+- Checking of files that exist so that you don't need find and search for the same links again.
 
 ## Requirements
 1. To install the python modules used by the project run the following in the directory.
