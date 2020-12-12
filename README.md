@@ -22,7 +22,7 @@ This is a project intended to automatically download all videos in a course and 
 - Add padding so files are in order and avoid overwriting of videos of the same file name.
 - Checking of files that exist so that you don't need find and search for the same links again.
 
-##Confirmed working on
+## Confirmed working on
  - Keats
  
 ## Requirements
