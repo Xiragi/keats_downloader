@@ -1,5 +1,4 @@
-iframe = window.document.getElementById("contentframe").contentDocument.getElementById("kplayer_ifp").contentDocument
-videoTag = iframe.getElementsByClassName("persistentNativePlayer nativeEmbedPlayerPid")[0]
+videoTag = document.getElementsByClassName("persistentNativePlayer nativeEmbedPlayerPid")[0]
 
 url = videoTag.src
 sub = null;

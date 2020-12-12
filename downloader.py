@@ -78,10 +78,15 @@ class Selenium():
                     try:
                         print(video[1],video[2],video[3])
                         driver.get(video[4])
+                        #Wait and open contentFrame
                         WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, 'contentframe')))
                         driver.switch_to.frame(driver.find_element_by_id('contentframe'))
+
+                        #Make sure that the player is loaded
+                        driver.execute_script(open("create_player.js").read())
+                        #Process player
                         WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, 'kplayer_ifp')))
-                        driver.switch_to.default_content()
+                        driver.switch_to.frame(driver.find_element_by_id('kplayer_ifp'))
                         sleep(delay)
                     except:
                         print("Failed to find frame")
