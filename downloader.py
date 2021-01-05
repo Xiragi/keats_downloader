@@ -108,7 +108,7 @@ class Selenium():
 class VideoSaver():
     def __init__(self,online):
         self.online = online
-        self.MAX_NAME_LENGTH = 40
+        self.MAX_NAME_LENGTH = 240
         if online:
             self.base_folder="online_library"
             self.extension="m3u8"
