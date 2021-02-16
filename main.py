@@ -1,5 +1,6 @@
 import downloader
-
+import threading
+import time
 #Setup stage
 
 ###Database
@@ -13,6 +14,21 @@ if response == "Y":
 else:
     database = databaseHandler.loadDatabase()
 
+global finalStep
+finalStep = False
+def aSyncVideoDownload():
+    global FinalStep
+    print("\nasync video download thread started\n")
+    databaseHandler2 = downloader.Database()
+    database2 = databaseHandler2.loadDatabase()
+    videoDownloader = downloader.VideoSaver(False)
+    while not finalStep:
+        time.sleep(2)
+        videoDownloader.downloadVideo(database2)
+    print("\nasync video download thread ended\n")
+a = threading.Thread(target = aSyncVideoDownload) 
+a.start()
+      
 ###Login
 print("Have you logged in before? (Y/N)")
 response = input("")
@@ -41,6 +57,7 @@ Browser.getVideoURLs(database,delay)
 
 #Video downloading
 ###Downloading videos
+finalStep = True
 print("Downloading videos")
 videoDownloader = downloader.VideoSaver(False)
 videoDownloader.downloadVideo(database)
