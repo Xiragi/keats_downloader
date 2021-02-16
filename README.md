@@ -11,17 +11,17 @@ Benefits include:
 
 ## Todo
 
-- Convert variable names from camel case to snake case
-- Add an auto-install script
-- Improve setup experience
-- Headless mode
-- Use of other drivers
-- Linux and Mac OSX support
-- srt download option
-- Auto-add ffmpeg to path 
-- Add padding so files are in order and avoid overwriting of videos of the same file name.
-- Checking of files that exist so that you don't need to find and search for the same links again.
-- Multithread the get video list function to improve speed(currently the biggest bottleneck in the code)
+- [ ] Convert variable names from camel case to snake case
+- [ ] Add an auto-install script
+- [ ] Improve setup experience
+- [ ] Headless mode
+- [ ] Use of other drivers
+- [ ] Linux and Mac OSX support
+- [ ] srt download option
+- [ ] Auto-add ffmpeg to path 
+- [ ] Add padding so files are in order and avoid overwriting of videos of the same file name.
+- [ ] Checking of files that exist so that you don't need to find and search for the same links again.
+- [x] Multithread the get video list function to improve speed(currently the biggest bottleneck in the code)
 ## Confirmed working on
  - Keats
  
