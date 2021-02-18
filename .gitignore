@@ -5,3 +5,6 @@ selenium/chrome_driver/*
 *.db
 courses.txt
 selenium/chromedriver.exe
+/venv/
+/.idea/
+/identifier.sqlite
