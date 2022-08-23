@@ -1,7 +1,7 @@
 > :warning: This project is very WIP, the link to the video page or the video itself might not be recognised.  
 > This project is a fork of the original repository so our programs may not work together in the future.
 
-# This project is for downloading projects off of keats.
+# This project is for downloading videos off of keats.
 This is a project intended to automatically download all videos in a course and store them locally. My aim has been merging [memst's](https://github.com/memst/keats_downloader) and [dylantjb's](https://github.com/dylantjb/keats_downloader) code into one single script easy to use script that any user can run without having to understand the code along with my edits.
 Benefits include:
 - Being able to play back videos at speeds the Kaltura player doesn't allow you
