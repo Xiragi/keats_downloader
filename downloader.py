@@ -80,15 +80,16 @@ class Selenium():
                         driver.get(video[4])
                         #Wait and open contentFrame
                         WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, 'contentframe')))
-                        driver.switch_to.frame(driver.find_element_by_id('contentframe'))
+                        driver.switch_to.frame(driver.find_element(By.ID,'contentframe'))
 
                         #Make sure that the player is loaded
                         driver.execute_script(open("create_player.js").read())
                         #Process player
-                        WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, 'kplayer_ifp')))
-                        driver.switch_to.frame(driver.find_element_by_id('kplayer_ifp'))
+                        WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, 'kplayer')))
+                        driver.switch_to.frame(driver.find_element(By.ID,'kplayer_ifp'))
                         sleep(delay)
-                    except:
+                    except Exception as e:
+                        print(e)
                         print("Failed to find frame")
                         continue
                     #still using JS for some reason. Could quite easily change this to be pure selenium, but me lazy.
@@ -137,8 +138,12 @@ class VideoSaver():
                 r = requests.get(video[5])
                 open(path, "wb").write(r.content)
             else:
-                ffmpeg.input(video[5]).output(path,codec="copy").run()
-                print("Finished downloading: ",video[1],video[2],video[3])
+                try:
+                    ffmpeg.input(video[5]).output(path,codec="copy").run()
+                    print("Finished downloading: ",video[1],video[2],video[3])
+                except Exception as e:
+                    print("Error")
+                    print(e)
             if (video[6] is not None):
                 r = requests.get(video[6])
                 open(srt_path, "wb").write(r.content)
