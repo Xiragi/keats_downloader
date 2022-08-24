@@ -10,7 +10,6 @@ databaseHandler = downloader.Database()
 databaseHandler.createNewDatabase()
 database = databaseHandler.getDatabase()
 
-
 global finalStep
 finalStep = False
 
@@ -45,9 +44,14 @@ print("Setup stage complete")
 print("Trying to load courses.txt file")
 try:
     courses = downloader.Courses().getCourses()
+    if (len(courses) == 0) or (len(courses[0]) < 2):
+        print("---- Your courses.txt file is empty ----")
+        raise Exception("File empty")
 except:
     print(
         "Something went wrong opening courses.txt. Make sure that text file exists with your module link on each line")
+    finalStep = True  # Kill async video download thread
+    quit()
 
 print("Getting the video list")
 Browser.getVideoList(database, courses)
