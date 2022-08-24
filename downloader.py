@@ -33,7 +33,7 @@ class Database():
 
 class Selenium():
     def __init__(self):
-        self.webDriverOptions = "user-data-dir=selenium/chrome_driver"
+        self.webDriverOptions = "--user-data-dir=" + os.getcwd() + "/selenium/chrome_driver"
         self.webDriverPath = "selenium/chromedriver.exe"
 
     def loadKeatsPage(self,webSecurity):

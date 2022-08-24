@@ -5,15 +5,11 @@ import time
 # Setup stage
 
 # Database
-print("Would to like to create a new database?(Y/N)")
-print("If this is the first time running this then type in Y")
-response = input("")
+
 databaseHandler = downloader.Database()
-if response == "Y":
-    databaseHandler.createNewDatabase()
-    database = databaseHandler.getDatabase()
-else:
-    database = databaseHandler.loadDatabase()
+databaseHandler.createNewDatabase()
+database = databaseHandler.getDatabase()
+
 
 global finalStep
 finalStep = False
