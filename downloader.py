@@ -104,7 +104,8 @@ class Selenium():
                     database.execute("UPDATE Videos SET videoUrl=?, srtUrl=? WHERE pageUrl=?",(urls[0],urls[1],video[4]))
                     database.commit()
                     notComplete= False
-                except:
+                except Exception as e:
+                    print(e)
                     print("Error. Retrying")
                     sleep(3)
         database.commit() #I don't think this is needed here but i'll see.
