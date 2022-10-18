@@ -19,8 +19,9 @@ pip3 install -r requirements.txt
 #### 2. Download the chrome selenium driver [here](https://sites.google.com/a/chromium.org/chromedriver/downloads). Extract and place it in the main directory such that the directory looks like this. 
 
 ### **Make sure the selenium driver you get is the same version as the Chrome browser you are using!!**
+### **Also, keep in mind, everytime your Chrome updates, this file needs to be replaced!!**
 To check what Chrome version you have, 
- 1. click the settings icon at the top right
+ 1. Click the settings icon at the top right
  2. Hover help and click about chrome 
  3. The version number should be displayed 
 
