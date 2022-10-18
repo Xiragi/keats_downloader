@@ -1,5 +1,6 @@
 import sqlite3
 import os
+import platform
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
@@ -34,7 +35,10 @@ class Database():
 class Selenium():
     def __init__(self):
         self.webDriverOptions = "--user-data-dir=" + os.getcwd() + "/selenium/chrome_driver"
-        self.webDriverPath = os.getcwd() + "/selenium/chromedriver.exe"
+        extension = ""
+        if "Windows" == platform.system():
+            extension  = ".exe"
+        self.webDriverPath = os.getcwd() + "/selenium/chromedriver"+extension
 
     def loadKeatsPage(self,webSecurity):
         options = webdriver.ChromeOptions()
