@@ -9,22 +9,8 @@ Benefits include:
 - Being able to use subtitles as a semi-accurate transcript
 - Being able to watch high-resolution video streams with no buffering
 - Offline download for those with bad internet connections.
-
-## Todo
-
-- [ ] Convert variable names from camel case to snake case
-- [ ] Add an auto-install script
-- [ ] Improve setup experience
-- [ ] Headless mode
-- [x] Linux and Mac OSX support
-- [ ] srt download option
-- [ ] Add padding so files are in order and avoid overwriting of videos of the same file name.
-- [ ] Checking of files that exist so that you don't need to find and search for the same links again.
-- [x] Multithread the get video list function to improve speed(currently the biggest bottleneck in the code)
-## Confirmed working on
- - Keats with kaltura video hosting
  
-## Requirements
+## Insllation
 1. To install the python modules used by the project run the following in the directory.
 ```
 pip3 install -r requirements.txt
@@ -41,12 +27,16 @@ pip3 install -r requirements.txt
 3. Install FFMpeg 
 
 
-For windows: Download](https://github.com/BtbN/FFmpeg-Builds/releases). 
+For windows: [Download This](https://github.com/BtbN/FFmpeg-Builds/releases). 
 Copy the contents of the bin folder so that there are 3 files in the main directory.
 ```
-./ffmpeg.exe
-./ffplay.exe
-./ffprobe.exe
+...
+/keats_downloader/ffmpeg.exe
+/keats_downloader/ffplay.exe
+/keats_downloader/ffprobe.exe
+/keats_downloader/main.py
+/keats_downloader/downloader.py
+...
 ```
 
 For ubuntu: run 
@@ -66,3 +56,17 @@ https://keats.kcl.ac.uk/course/view.php?id=CCCCC
 https://keats.kcl.ac.uk/course/view.php?id=DDDDD
 ```
 2. Execute main.py and it should walk you through the steps. 
+
+## Todo
+
+- [ ] Convert variable names from camel case to snake case
+- [ ] Add an auto-install script
+- [ ] Improve setup experience
+- [ ] Headless mode
+- [x] Linux and Mac OSX support
+- [ ] srt download option
+- [ ] Add padding so files are in order and avoid overwriting of videos of the same file name.
+- [ ] Checking of files that exist so that you don't need to find and search for the same links again.
+- [x] Multithread the get video list function to improve speed(currently the biggest bottleneck in the code)
+## Confirmed working on
+ - Keats with kaltura video hosting
