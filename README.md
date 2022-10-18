@@ -10,21 +10,26 @@ Benefits include:
 - Being able to watch high-resolution video streams with no buffering
 - Offline download for those with bad internet connections.
  
-## Insllation
-1. To install the python modules used by the project run the following in the directory.
+## Installation
+#### 1. Install python modules used by the project
+Open up a terminal pointing to the folder and run the command below. 
 ```
 pip3 install -r requirements.txt
 ```
-2. Download the chrome selenium driver [here](https://sites.google.com/a/chromium.org/chromedriver/downloads). Extract and place it in the main directory such that the directory looks like this. 
+#### 2. Download the chrome selenium driver [here](https://sites.google.com/a/chromium.org/chromedriver/downloads). Extract and place it in the main directory such that the directory looks like this. 
 
-### **Make sure the selenium driver you get is the same version as the chrome browser you are using!!**
+### **Make sure the selenium driver you get is the same version as the Chrome browser you are using!!**
+To check what Chrome version you have, 
+ 1. click the settings icon at the top right
+ 2. Hover help and click about chrome 
+ 3. The version number should be displayed 
 
 ```
 ./selenium/chromedriver.exe
 ./selenium/chromedriver/
 ```
 
-3. Install FFMpeg 
+#### 3. Install FFmpeg 
 
 
 For windows: [Download This](https://github.com/BtbN/FFmpeg-Builds/releases). 
@@ -55,7 +60,7 @@ brew install ffmpeg
 https://keats.kcl.ac.uk/course/view.php?id=CCCCC
 https://keats.kcl.ac.uk/course/view.php?id=DDDDD
 ```
-2. Execute main.py and it should walk you through the steps. 
+2. Execute main.py. It should walk you through the steps. 
 
 ## Todo
 
