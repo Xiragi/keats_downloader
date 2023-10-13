@@ -1,5 +1,7 @@
 > :warning: This project is still buggy, it doesn't support all forms of video formats on keats
 
+This project was a forked project of [memst's](https://github.com/memst/keats_downloader) but the code is quite a bit different and abandoned, so I've unforked it and made it separate.
+
 # This project is for downloading videos off of keats.
 This is a project intended to automatically download all videos in a course and store them locally. 
 The original idea was to merge [memst's](https://github.com/memst/keats_downloader) and [dylantjb's](https://github.com/dylantjb/keats_downloader) but this has rolled off to be a maintained version of keats downloader 
@@ -16,14 +18,18 @@ Open up a terminal pointing to the folder and run the command below.
 ```
 pip3 install -r requirements.txt
 ```
-#### 2. Download the chrome selenium driver [here](https://sites.google.com/a/chromium.org/chromedriver/downloads).
+#### 2. Download the chrome selenium driver
 
 #### **Make sure the selenium driver you get is the same version as the Chrome browser you are using!!**
 #### **Also, keep in mind, everytime your Chrome updates, this file needs to be replaced!!**
 To check what Chrome version you have, 
  1. Click the settings icon at the top right
  2. Hover help and click about chrome 
- 3. The version number should be displayed 
+ 3. Let it update if need be, then go back to step 1
+ 4. The version number should be displayed
+ 5. Download the corresponding chromedriver from the link below. (Click on the ChromeDriver xxx.x.xxxx.xx black text) 
+
+Download [here](https://sites.google.com/chromium.org/driver/downloads?authuser=0).
 
 Download and, if needed, extract. Place the file in the main directory such that the directory looks like this. 
 ```
